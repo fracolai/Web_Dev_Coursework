@@ -13,6 +13,10 @@
         .auto-style5 {
             text-align: justify;
         }
+        .auto-style6 {
+            color: #000000;
+            background-color: #669900;
+        }
     </style>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
@@ -22,7 +26,7 @@
 
 </head>
 <html xmlns="http://www.w3.org/1999/xhtml">
-<body>
+<body class="auto-style6">
     <form id="form1" runat="server">
         <div>
     
@@ -61,7 +65,7 @@
         </p>
         <p>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Button ID="Button1" runat="server" Text="SEARCH" Width="188px" />
+            <asp:Button ID="Button1" runat="server" Text="SEARCH" Width="188px" BackColor="#999999" Font-Bold="True" />
         </p>
         <p>
             &nbsp;</p>
@@ -69,6 +73,6 @@
 </body>
 </html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-<body>
+<body class="auto-style6">
 </body>
 </html>
