@@ -1,7 +1,6 @@
 ﻿<%@ Page Title="Registration" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeFile="Register.aspx.cs" Inherits="Account_Register" %>
 
-<asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent" style="color:#000000;
-            background-color:#669900">
+<asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent" >
     <h2><%: Title %>.</h2>
     <p class="text-danger">
         <asp:Literal runat="server" ID="ErrorMessage" />
@@ -19,6 +18,7 @@
                     CssClass="text-danger" ErrorMessage="Username field is required." />
             </div>
         </div>
+
         <div class="form-group">
             <asp:Label runat="server" AssociatedControlID="Password" CssClass="col-md-2 control-label">Password</asp:Label>
             <div class="col-md-10">
