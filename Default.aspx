@@ -5,7 +5,6 @@
     <div class="jumbotron">
         <h1>JOB HUNT</h1>
         <p class="lead">Job Hunt is a web site which enables people to search and apply for their suitable jobs based on their preferences.</p>
-        <!--<p><a href="http://www.asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p> -->
     </div>
 
     <div class="row">
@@ -15,7 +14,7 @@
                 Make use of our quick and efficient job search engine to look for your suitable jobs.
             </p>
             <p>
-                <a class="btn btn-default" href="Search1">Search &raquo;</a>
+                <a class="btn btn-default" href="Search">Search &raquo;</a>
             </p>
         </div>
     </div>

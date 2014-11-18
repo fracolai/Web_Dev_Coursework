@@ -162,7 +162,7 @@ button,
 input,
 select,
 textarea {
-  margin: 0;
+  margin: 2px 0 0 0;
   font-family: inherit;
   font-size: 100%;
 }
@@ -183,6 +183,7 @@ input[type="reset"],
 input[type="submit"] {
   cursor: pointer;
   -webkit-appearance: button;
+    font-weight: 700;
 }
 
 button[disabled],
@@ -402,6 +403,7 @@ hr {
 
 p {
   margin: 0 0 10px;
+    width: 930px;
 }
 
 .lead {
