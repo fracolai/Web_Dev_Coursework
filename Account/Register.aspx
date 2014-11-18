@@ -11,7 +11,7 @@
         <hr />
         <asp:ValidationSummary runat="server" CssClass="text-danger" />
        
-
+     <!--This is a comment. Comments are not displayed in the browser-->
 
         <div class="form-group">
             <asp:Label runat="server" AssociatedControlID="UserName" CssClass="col-md-2 control-label">Email</asp:Label>
