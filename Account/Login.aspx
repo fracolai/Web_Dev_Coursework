@@ -36,12 +36,16 @@
                             <div class="checkbox">
                                 <asp:CheckBox runat="server" ID="RememberMe" />
                                 <asp:Label runat="server" AssociatedControlID="RememberMe">Remember me</asp:Label>
+                                <br />
                             </div>
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="col-md-offset-2 col-md-10">
-                            <asp:Button runat="server" OnClick="LogIn" Text="Log in" CssClass="btn btn-default" />
+                            <br />
+                            <asp:Button runat="server" OnClick="LogIn" Text="Log in" CssClass="btn btn-default" Height="31px" Width="91px" />
+                            <br />
+                            <br />
                         </div>
                     </div>
                 </div>
@@ -49,6 +53,10 @@
                     <asp:HyperLink runat="server" ID="RegisterHyperLink" ViewStateMode="Disabled">Register</asp:HyperLink>
                     if you do not have a local account.
                 </p>
+                <p>
+                    &nbsp;</p>
+                <p>
+                    &nbsp;</p>
             </section>
         </div>
 
