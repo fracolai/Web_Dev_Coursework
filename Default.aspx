@@ -4,7 +4,7 @@
     <h2><%: Title %></h2>
     <div class="jumbotron">
         <h1>JOB HUNT</h1>
-        <p class="lead">Job Hunt is a web site which enables people to search and apply for their suitable jobs based on their preferences.</p>
+        <p class="lead">A job site which enables people to search and apply for their suitable jobs based on their preferences.</p>
     </div>
 
     <div class="row">
