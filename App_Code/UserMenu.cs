@@ -11,6 +11,7 @@ namespace Web_Dev_Coursework.App_Code
 {
     public class UserMenu
     {
+        [Key]
         [ScaffoldColumn(false)]
         public int MenuItemID { get; set; }
 

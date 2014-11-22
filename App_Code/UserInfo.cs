@@ -11,8 +11,9 @@ namespace Web_Dev_Coursework.App_Code
 {
     public class UserInfo
     {
+        [Key]
         [ScaffoldColumn(false)]
-        public int Id { get; set; }
+        public string Id { get; set; }
 
         [StringLength(256), Display(Name = "First Name")]
         public string FirstName { get; set; }
