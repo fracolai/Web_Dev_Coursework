@@ -6,6 +6,8 @@ using System.Web;
 using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Linq;
+using Web_Dev_Coursework.App_Code;
 
 public partial class SiteMaster : MasterPage
 {

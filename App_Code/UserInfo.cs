@@ -7,12 +7,12 @@ using System.ComponentModel.DataAnnotations;
 /// <summary>
 /// Summary description for UserInfo
 /// </summary>
-namespace Web_Dev_Coursework
+namespace Web_Dev_Coursework.App_Code
 {
     public class UserInfo
     {
         [ScaffoldColumn(false)]
-        public string UserName { get; set; }
+        public int Id { get; set; }
 
         [StringLength(256), Display(Name = "First Name")]
         public string FirstName { get; set; }

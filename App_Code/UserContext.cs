@@ -7,7 +7,7 @@ using System.Web;
 /// <summary>
 /// Summary description for UserContext
 /// </summary>
-namespace Web_Dev_Coursework
+namespace Web_Dev_Coursework.App_Code
 {
     public class UserContext:DbContext
     {

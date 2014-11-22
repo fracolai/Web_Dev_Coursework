@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations;
 /// <summary>
 /// Summary description for UserMenu
 /// </summary>
-namespace Web_Dev_Coursework
+namespace Web_Dev_Coursework.App_Code
 {
     public class UserMenu
     {
@@ -20,6 +20,6 @@ namespace Web_Dev_Coursework
         [Display(Name = "Menu Item Description")]
         public string Description { get; set; }
 
-        public virtual ICollection<UserInfo> UserInfo { get; set; }
+        public virtual ICollection<UserInfo> UserInfos { get; set; }
     }
 }

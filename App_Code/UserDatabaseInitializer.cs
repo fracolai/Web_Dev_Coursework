@@ -8,7 +8,7 @@ using System.Web;
 /// Summary description for UserDatabaseInitializer
 /// </summary>
 /// 
-namespace Web_Dev_Coursework
+namespace Web_Dev_Coursework.App_Code
 {
     public class UserDatabaseInitializer: DropCreateDatabaseIfModelChanges<UserContext>
     {
@@ -51,7 +51,7 @@ namespace Web_Dev_Coursework
             var userInfos = new List<UserInfo> {
                 new UserInfo
                 {
-                    UserName = "soumya1",
+                    Id = 1,
                     FirstName = "Soumya",
                     LastName = "Sundar",
                     EmailId = "soumya.sundar@gmail.com",
