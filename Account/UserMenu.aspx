@@ -3,10 +3,10 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" Runat="Server">
 <h2><%: Title %>.</h2>
 <div id="UserMenu" style="text-align:left"> 
-    <br />
-    <br />
-    <br />
-   <br />      
+<br />
+<br />
+<br />
+<br />      
    <asp:ListView ID="userMenuList"  
        ItemType="Web_Dev_Coursework.App_Code.UserMenu" 
        runat="server"
@@ -27,10 +27,10 @@
 </div>
 <br />
 <br />
-    <br />
-    <br />
-    <br />
-    <br />
+<br />
+<br />
+<br />
+<br />
 <br />
 </asp:Content>
 
