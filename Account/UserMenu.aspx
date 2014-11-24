@@ -15,7 +15,7 @@
            <table>
                <tr>
                    <b style="font-size:large; font-style: oblique">
-                   <a href="/UserInfo.aspx?id=<%#: Item.MenuItemID %>" style="color:black">
+                   <a href="UserInfo.aspx?id=<%#: Item.MenuItemID %>" style="color:black">
                    <%#: Item.MenuItemName %>
                    </a>
                    </b>
