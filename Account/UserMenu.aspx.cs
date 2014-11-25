@@ -10,7 +10,7 @@ public partial class Account_UserMenu : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        
     }
 
     public IQueryable<UserMenu> GetUserMenus()
