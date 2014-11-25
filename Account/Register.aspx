@@ -16,7 +16,7 @@
         <div class="form-group">
             <asp:Label runat="server" AssociatedControlID="UserName" CssClass="col-md-2 control-label">Email</asp:Label>
             <div class="col-md-10">
-                <asp:TextBox runat="server" ID="UserName" TextMode="Email" CssClass="form-control" />
+                <asp:TextBox runat="server" ID="UserName" TextMode="Email" CssClass="form-control" OnTextChanged="UserName_TextChanged" />
                 <asp:RequiredFieldValidator runat="server" ControlToValidate="UserName"
                     CssClass="text-danger" ErrorMessage="Email field is required." />
             </div>

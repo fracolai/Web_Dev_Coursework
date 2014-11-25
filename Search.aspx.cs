@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-public partial class Search1 : System.Web.UI.Page
+public partial class Search : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
@@ -13,6 +13,11 @@ public partial class Search1 : System.Web.UI.Page
     }
     protected void Button1_Click(object sender, EventArgs e)
     {
+       
+
+     
+
+
 
     }
     protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
@@ -20,6 +25,14 @@ public partial class Search1 : System.Web.UI.Page
 
     }
     protected void DropDownList2_SelectedIndexChanged(object sender, EventArgs e)
+    {
+
+    }
+    protected void SqlDataSource1_Selecting(object sender, SqlDataSourceSelectingEventArgs e)
+    {
+
+    }
+    protected void ListView1_SelectedIndexChanged(object sender, EventArgs e)
     {
 
     }

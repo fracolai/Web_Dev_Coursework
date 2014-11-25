@@ -21,4 +21,8 @@ public partial class Account_Register : Page
             ErrorMessage.Text = result.Errors.FirstOrDefault();
         }
     }
+    protected void UserName_TextChanged(object sender, EventArgs e)
+    {
+
+    }
 }
