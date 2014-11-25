@@ -48,10 +48,11 @@ namespace Web_Dev_Coursework.App_Code
 
         private static List<UserInfo> GetUserInfos()
         {
+            string currentuser = HttpContext.Current.User.Identity.Name;
             var userInfos = new List<UserInfo> {
                 new UserInfo
                 {
-                    Id = "soumya1",
+                    Id = currentuser,
                     FirstName = "Soumya",
                     LastName = "Sundar",
                     EmailId = "soumya.sundar@gmail.com",

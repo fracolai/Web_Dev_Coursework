@@ -3,9 +3,10 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" Runat="Server">
     <p>
         <br />
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Web_Dev_Coursework %>" SelectCommand="SELECT * FROM [UserInfoes] WHERE ([UserMenuID] = @UserMenuID)">
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Web_Dev_Coursework %>" SelectCommand="SELECT * FROM [UserInfoes] WHERE (([UserMenuID] = @UserMenuID) AND ([Id] = @Id))">
             <SelectParameters>
                 <asp:QueryStringParameter Name="UserMenuID" QueryStringField="id" Type="Int32" />
+                <asp:FormParameter FormField="EditIdTextBox" Name="Id" Type="String" />
             </SelectParameters>
         </asp:SqlDataSource>
     </p>
