@@ -162,7 +162,7 @@ button,
 input,
 select,
 textarea {
-  margin: 2px 0 0 0;
+  margin: 3px 0 0 8px;
   font-family: inherit;
   font-size: 100%;
 }
@@ -862,6 +862,9 @@ pre code {
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
+    top: 14px;
+    left: -5px;
+    margin-top: 10px;
 }
 
 .col-xs-1,
@@ -1720,8 +1723,6 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .form-control {
   display: block;
-  width: 100%;
-  height: 34px;
   padding: 6px 12px;
   font-size: 14px;
   line-height: 1.428571429;
@@ -1734,6 +1735,7 @@ input[type="number"]::-webkit-inner-spin-button {
           box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
           transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    text-align: center;
 }
 
 .form-control:focus {
@@ -1964,8 +1966,12 @@ textarea.input-lg {
 .form-horizontal .radio-inline,
 .form-horizontal .checkbox-inline {
   padding-top: 7px;
-  margin-top: 0;
+  margin-top: 2px;
   margin-bottom: 0;
+    top: 20px;
+    left: 0px;
+    height: 23px;
+    width: 70px;
 }
 
 .form-horizontal .form-group {
@@ -2006,7 +2012,7 @@ textarea.input-lg {
   font-size: 14px;
   font-weight: normal;
   line-height: 1.428571429;
-  text-align: center;
+  text-align: left;
   white-space: nowrap;
   vertical-align: middle;
   cursor: pointer;

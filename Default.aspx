@@ -1,10 +1,10 @@
-﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
+﻿<%@ Page Title="Welcome to" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-
+    <h2><%: Title %></h2>
     <div class="jumbotron">
         <h1>JOB HUNT</h1>
-        <p class="lead">Job Hunt is a web site which enables people to search and apply for their suitable jobs based on their preferences.</p>
+        <p class="lead">A job site which enables people to search and apply for their suitable jobs based on their preferences.</p>
     </div>
 
     <div class="row">
