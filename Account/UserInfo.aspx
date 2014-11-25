@@ -3,9 +3,8 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" Runat="Server">
     <p>
         <br />
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Web_Dev_Coursework %>" SelectCommand="SELECT * FROM [UserInfoes] WHERE (([Id] = @Id) AND ([UserMenuID] = @UserMenuID))">
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Web_Dev_Coursework %>" SelectCommand="SELECT * FROM [UserInfoes] WHERE ([UserMenuID] = @UserMenuID)">
             <SelectParameters>
-                <asp:ProfileParameter Name="Id" PropertyName="UserName" Type="String" />
                 <asp:QueryStringParameter Name="UserMenuID" QueryStringField="id" Type="Int32" />
             </SelectParameters>
         </asp:SqlDataSource>
@@ -18,7 +17,7 @@
                 <b>User Name:</b>
             </td>
             <td>
-                <asp:TextBox ID="EditIdTextBox" RunAt="Server" Text='<%# Bind("Id") %>' />
+                <asp:TextBox ID="EditIdTextBox" RunAt="Server" Text='<%# Bind("Id") %>' OnTextChanged="EditIdTextBox_TextChanged" />
             </td>
             </tr>
             <tr>

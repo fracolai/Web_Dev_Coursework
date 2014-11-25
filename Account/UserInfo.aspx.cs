@@ -39,4 +39,8 @@ public partial class Account_UserInfo : System.Web.UI.Page
     {
 
     }
+    protected void EditIdTextBox_TextChanged(object sender, EventArgs e)
+    {
+
+    }
 }
