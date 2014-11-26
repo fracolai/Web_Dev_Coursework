@@ -53,13 +53,28 @@ namespace Web_Dev_Coursework.App_Code
                 new UserInfo
                 {
                     Id = currentuser,
-                    FirstName = "Soumya",
-                    LastName = "Sundar",
-                    EmailId = "soumya.sundar@gmail.com",
-                    MobileNumber=800546234,
-                    Country = "UK",
-                    PostCode = "RG14 8SG",
+                    //FirstName = "Soumya",
+                    //LastName = "Sundar",
+                    //EmailId = "soumya.sundar@gmail.com",
+                    //MobileNumber=800546234,
+                    //Country = "UK",
+                    //PostCode = "RG14 8SG",
                     UserMenuID = 1
+               },
+               new UserInfo
+                {
+                    Id = currentuser,
+                    UserMenuID = 2
+               },
+               new UserInfo
+                {
+                    Id = currentuser,
+                    UserMenuID = 3
+               },
+               new UserInfo
+                {
+                    Id = currentuser,
+                    UserMenuID = 4
                }
             };
             return userInfos;

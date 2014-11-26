@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity;
 using System.Linq;
 using System.Web;
@@ -15,6 +16,7 @@ namespace Web_Dev_Coursework.App_Code
         {
 
         }
+
         public DbSet<UserMenu> UserMenus { get; set; }
         public DbSet<UserInfo> UserInfos { get; set; }
     }
