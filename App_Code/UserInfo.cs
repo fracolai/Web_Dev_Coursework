@@ -27,7 +27,7 @@ namespace Web_Dev_Coursework.App_Code
         public string EmailId { get; set; }
 
         [Display(Name = "Mobile Number")]
-        public int MobileNumber { get; set; }
+        public double MobileNumber { get; set; }
 
         [Display(Name = "Country of Residence")]
         public string Country { get; set; }

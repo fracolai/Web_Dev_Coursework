@@ -10,11 +10,63 @@
     <div id="UserInfo" style="text-align:left">  
     <p>
         <br />
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Web_Dev_Coursework %>" SelectCommand="SELECT * FROM [UserInfoes] WHERE (([Id] = @Id) AND ([UserMenuID] = @UserMenuID))">
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Web_Dev_Coursework %>" SelectCommand="SELECT * FROM [UserInfoes] WHERE (([Id] = @Id) AND ([UserMenuID] = @UserMenuID))" ConflictDetection="CompareAllValues" DeleteCommand="DELETE FROM [UserInfoes] WHERE [Id] = @original_Id AND [UserMenuID] = @original_UserMenuID AND (([FirstName] = @original_FirstName) OR ([FirstName] IS NULL AND @original_FirstName IS NULL)) AND (([LastName] = @original_LastName) OR ([LastName] IS NULL AND @original_LastName IS NULL)) AND (([EmailId] = @original_EmailId) OR ([EmailId] IS NULL AND @original_EmailId IS NULL)) AND [MobileNumber] = @original_MobileNumber AND (([Country] = @original_Country) OR ([Country] IS NULL AND @original_Country IS NULL)) AND (([PostCode] = @original_PostCode) OR ([PostCode] IS NULL AND @original_PostCode IS NULL)) AND (([CVPath] = @original_CVPath) OR ([CVPath] IS NULL AND @original_CVPath IS NULL)) AND (([CLPath] = @original_CLPath) OR ([CLPath] IS NULL AND @original_CLPath IS NULL)) AND (([ALink] = @original_ALink) OR ([ALink] IS NULL AND @original_ALink IS NULL)) AND (([UserMenu_MenuItemID] = @original_UserMenu_MenuItemID) OR ([UserMenu_MenuItemID] IS NULL AND @original_UserMenu_MenuItemID IS NULL))" InsertCommand="INSERT INTO [UserInfoes] ([Id], [UserMenuID], [FirstName], [LastName], [EmailId], [MobileNumber], [Country], [PostCode], [CVPath], [CLPath], [ALink], [UserMenu_MenuItemID]) VALUES (@Id, @UserMenuID, @FirstName, @LastName, @EmailId, @MobileNumber, @Country, @PostCode, @CVPath, @CLPath, @ALink, @UserMenu_MenuItemID)" OldValuesParameterFormatString="original_{0}" UpdateCommand="UPDATE [UserInfoes] SET [FirstName] = @FirstName, [LastName] = @LastName, [EmailId] = @EmailId, [MobileNumber] = @MobileNumber, [Country] = @Country, [PostCode] = @PostCode, [CVPath] = @CVPath, [CLPath] = @CLPath, [ALink] = @ALink, [UserMenu_MenuItemID] = @UserMenu_MenuItemID WHERE [Id] = @original_Id AND [UserMenuID] = @original_UserMenuID AND (([FirstName] = @original_FirstName) OR ([FirstName] IS NULL AND @original_FirstName IS NULL)) AND (([LastName] = @original_LastName) OR ([LastName] IS NULL AND @original_LastName IS NULL)) AND (([EmailId] = @original_EmailId) OR ([EmailId] IS NULL AND @original_EmailId IS NULL)) AND [MobileNumber] = @original_MobileNumber AND (([Country] = @original_Country) OR ([Country] IS NULL AND @original_Country IS NULL)) AND (([PostCode] = @original_PostCode) OR ([PostCode] IS NULL AND @original_PostCode IS NULL)) AND (([CVPath] = @original_CVPath) OR ([CVPath] IS NULL AND @original_CVPath IS NULL)) AND (([CLPath] = @original_CLPath) OR ([CLPath] IS NULL AND @original_CLPath IS NULL)) AND (([ALink] = @original_ALink) OR ([ALink] IS NULL AND @original_ALink IS NULL)) AND (([UserMenu_MenuItemID] = @original_UserMenu_MenuItemID) OR ([UserMenu_MenuItemID] IS NULL AND @original_UserMenu_MenuItemID IS NULL))">
+            <DeleteParameters>
+                <asp:Parameter Name="original_Id" Type="String" />
+                <asp:Parameter Name="original_UserMenuID" Type="Int32" />
+                <asp:Parameter Name="original_FirstName" Type="String" />
+                <asp:Parameter Name="original_LastName" Type="String" />
+                <asp:Parameter Name="original_EmailId" Type="String" />
+                <asp:Parameter Name="original_MobileNumber" Type="Int64" />
+                <asp:Parameter Name="original_Country" Type="String" />
+                <asp:Parameter Name="original_PostCode" Type="String" />
+                <asp:Parameter Name="original_CVPath" Type="String" />
+                <asp:Parameter Name="original_CLPath" Type="String" />
+                <asp:Parameter Name="original_ALink" Type="String" />
+                <asp:Parameter Name="original_UserMenu_MenuItemID" Type="Int32" />
+            </DeleteParameters>
+            <InsertParameters>
+                <asp:Parameter Name="Id" Type="String" />
+                <asp:Parameter Name="UserMenuID" Type="Int32" />
+                <asp:Parameter Name="FirstName" Type="String" />
+                <asp:Parameter Name="LastName" Type="String" />
+                <asp:Parameter Name="EmailId" Type="String" />
+                <asp:Parameter Name="MobileNumber" Type="Int64" />
+                <asp:Parameter Name="Country" Type="String" />
+                <asp:Parameter Name="PostCode" Type="String" />
+                <asp:Parameter Name="CVPath" Type="String" />
+                <asp:Parameter Name="CLPath" Type="String" />
+                <asp:Parameter Name="ALink" Type="String" />
+                <asp:Parameter Name="UserMenu_MenuItemID" Type="Int32" />
+            </InsertParameters>
             <SelectParameters>
                 <asp:Parameter Name="Id" Type="String" />
                 <asp:QueryStringParameter Name="UserMenuID" QueryStringField="id" Type="Int32" />
             </SelectParameters>
+            <UpdateParameters>
+                <asp:Parameter Name="FirstName" Type="String" />
+                <asp:Parameter Name="LastName" Type="String" />
+                <asp:Parameter Name="EmailId" Type="String" />
+                <asp:Parameter Name="MobileNumber" Type="Int64" />
+                <asp:Parameter Name="Country" Type="String" />
+                <asp:Parameter Name="PostCode" Type="String" />
+                <asp:Parameter Name="CVPath" Type="String" />
+                <asp:Parameter Name="CLPath" Type="String" />
+                <asp:Parameter Name="ALink" Type="String" />
+                <asp:Parameter Name="UserMenu_MenuItemID" Type="Int32" />
+                <asp:Parameter Name="original_Id" Type="String" />
+                <asp:Parameter Name="original_UserMenuID" Type="Int32" />
+                <asp:Parameter Name="original_FirstName" Type="String" />
+                <asp:Parameter Name="original_LastName" Type="String" />
+                <asp:Parameter Name="original_EmailId" Type="String" />
+                <asp:Parameter Name="original_MobileNumber" Type="Int32" />
+                <asp:Parameter Name="original_Country" Type="String" />
+                <asp:Parameter Name="original_PostCode" Type="String" />
+                <asp:Parameter Name="original_CVPath" Type="String" />
+                <asp:Parameter Name="original_CLPath" Type="String" />
+                <asp:Parameter Name="original_ALink" Type="String" />
+                <asp:Parameter Name="original_UserMenu_MenuItemID" Type="Int32" />
+            </UpdateParameters>
         </asp:SqlDataSource>
     </p>
     <% 
