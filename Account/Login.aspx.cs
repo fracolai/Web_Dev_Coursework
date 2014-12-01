@@ -1,9 +1,14 @@
 ﻿using Microsoft.AspNet.Identity;
 using Microsoft.Owin.Security;
 using System;
+using System.Configuration;
+using System.Data;
+using System.Data.Entity;
+using System.Data.SqlClient;
 using System.Web;
 using System.Web.UI;
 using Web_Dev_Coursework;
+using Web_Dev_Coursework.App_Code;
 
 public partial class Account_Login : Page
 {
@@ -27,6 +32,7 @@ public partial class Account_Login : Page
                 ApplicationUser user = manager.Find(UserName.Text, Password.Text);
                 if (user != null)
                 {
+                    AddNewUsers users = new AddNewUsers(UserName.Text);
                     IdentityHelper.SignIn(manager, user, RememberMe.Checked);
                     IdentityHelper.RedirectToReturnUrl(Request.QueryString["ReturnUrl"], Response);
                 }
