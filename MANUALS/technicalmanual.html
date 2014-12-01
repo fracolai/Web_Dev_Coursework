@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head><title>Web Development coursework-Technical Manual </title>
+<style>
+table, th, td {
+    border: 1px solid black;
+}
+th, td {
+        padding: 5px;
+}
+
+
+
+img.image{width:800px;height:170px;}
+
+img.image2 {
+        width:800px;height:270px;
+    }
+
+    img.image3{
+
+      width:800px;height:470px;
+    }
+p {
+        font-size: 18px;
+  }
+
+li {
+      font-size: 20px;
+   }
+</style>
+</head>
+
+<body style="background-color:lightgray;font-family:'Times New Roman'" >
+    <header style="font-family: Comic Sans MS;font-size:25px"><h1><u>TECHNICAL MANUAL</u></h1></header>
+
+
+   <p> 1.To implement the first user story(the Job Search), we decided to create a new page named "Search.aspx" with the master page template furnished by Visual Studio.
+     Then we created  two textboxes to display the fields KEYWORDS and LOCATION, and then two dropdown lists to display the fields SALARY and JOB TYPE.
+     Next we created a ListView control to display the results of the search and a DataSource control.We configured the DataSource control setting up first the data connection(as shown below)</p>
+
+    <p> <img src="datasource.png" class="image3"></p>
+    <p> and then the query string.</p>
+    <p><img src="querystring.png" class="image3"></p>
+
+    <p>At this point we set up the layout of the ListView control to perform a professional display of the search results and complete the user story.</p>
+
+    
+
+
+
+    <p>4.To implement the fourth user story(the Job Apply), we decided to create a new page named "Apply.aspx" with the master page template.
+      When a logged user clicks on the <i>Apply</i> link of a particular job in the <i>Search</i> page, the success message will be displayed as implemented between the <i>LoggedInTemplate</i> tags. Otherwise the user will be asked to login to the website, as shown between the AnonymousTemplate tags.</p>
+      <p><img src="applycode.png" class="image3"></p> 
+
+
+
+
+
+    
