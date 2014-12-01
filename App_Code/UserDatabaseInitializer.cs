@@ -46,7 +46,7 @@ namespace Web_Dev_Coursework.App_Code
             return userMenus;
         }
 
-        private static List<UserInfo> GetUserInfos()
+        public static List<UserInfo> GetUserInfos()
         {
             string currentuser = HttpContext.Current.User.Identity.Name;
             var userInfos = new List<UserInfo> {
@@ -66,7 +66,7 @@ namespace Web_Dev_Coursework.App_Code
                     UserMenuID = 3
                },
                new UserInfo
-                {
+               {
                     Id = currentuser,
                     UserMenuID = 4
                }

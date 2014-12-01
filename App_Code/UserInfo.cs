@@ -27,7 +27,7 @@ namespace Web_Dev_Coursework.App_Code
         public string EmailId { get; set; }
 
         [Display(Name = "Mobile Number")]
-        public double MobileNumber { get; set; }
+        public double? MobileNumber { get; set; }
 
         [Display(Name = "Country of Residence")]
         public string Country { get; set; }
@@ -35,10 +35,10 @@ namespace Web_Dev_Coursework.App_Code
         [StringLength(256), Display(Name = "Post Code")]
         public string PostCode { get; set; }
 
-        [StringLength(256), Display(Name = "CV Path")]
+        [Display(Name = "CV Path")]
         public string CVPath { get; set; }
 
-        [StringLength(256), Display(Name = "Cover Letter Path")]
+        [Display(Name = "Cover Letter Path")]
         public string CLPath { get; set; }
 
         [StringLength(256), Display(Name = "Application Link")]
