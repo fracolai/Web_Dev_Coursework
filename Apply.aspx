@@ -23,6 +23,7 @@
 
             <p>You are not logged in! Please  <a href="Account\Login">Login</a>  to continue.</p>
             
+            
            
         </AnonymousTemplate>
         <LoggedInTemplate>
