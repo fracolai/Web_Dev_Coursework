@@ -34,7 +34,9 @@ public partial class Account_Login : Page
                 {
                     AddNewUsers users = new AddNewUsers(UserName.Text);
                     IdentityHelper.SignIn(manager, user, RememberMe.Checked);
-                    IdentityHelper.RedirectToReturnUrl(Request.QueryString["ReturnUrl"], Response);
+                    //IdentityHelper.RedirectToReturnUrl(Request.QueryString["ReturnUrl"], Response);
+                    //redirects to the search page instead of Home Page
+                    Response.Redirect("/Search.aspx");
                 }
                 else
                 {
