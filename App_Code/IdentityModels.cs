@@ -7,7 +7,7 @@ using Web_Dev_Coursework;
 
 namespace Web_Dev_Coursework
 {
-    // È possibile aggiungere dati utente specificando altre proprietà per la classe utente. Per ulteriori informazioni visitare http://go.microsoft.com/fwlink/?LinkID=317594.
+    // You can add User data for the user by adding more properties to your User class, please visit http://go.microsoft.com/fwlink/?LinkID=317594 to learn more.
     public class ApplicationUser : IdentityUser
     {
     }
@@ -34,7 +34,7 @@ namespace Web_Dev_Coursework
 {
     public static class IdentityHelper
     {
-        // Utilizzati per XSRF durante il collegamento degli account di accesso esterni
+        // Used for XSRF when linking external logins
         public const string XsrfKey = "XsrfId";
 
         public static void SignIn(UserManager manager, ApplicationUser user, bool isPersistent)

@@ -92,7 +92,7 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <div class="col-md-offset-2 col-md-10">
+                            <div class="col-md-offset-1 col-md-10">
                                 <asp:Button runat="server" Text="Change password" OnClick="ChangePassword_Click" CssClass="btn btn-default" ValidationGroup="ChangePassword" />
                             </div>
                         </div>

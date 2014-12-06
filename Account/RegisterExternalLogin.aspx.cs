@@ -20,7 +20,7 @@ public partial class Account_RegisterExternalLogin : System.Web.UI.Page
 
     protected void Page_Load()
     {
-        // Elaborare il risultato fornito da un provider di autenticazione nella richiesta
+        // Process the result from an auth provider in the request
         ProviderName = IdentityHelper.GetProviderNameFromRequest(Request);
         if (String.IsNullOrEmpty(ProviderName))
         {
@@ -42,7 +42,7 @@ public partial class Account_RegisterExternalLogin : System.Web.UI.Page
             }
             else if (User.Identity.IsAuthenticated)
             {
-                // Applicare il controllo XSRF durante il collegamento
+                // Apply Xsrf check when linking
                 var verifiedloginInfo = Context.GetOwinContext().Authentication.GetExternalLoginInfo(IdentityHelper.XsrfKey, User.Identity.GetUserId());
                 if (verifiedloginInfo == null)
                 {

@@ -28,7 +28,7 @@ public partial class Account_Manage : System.Web.UI.Page
     {
         if (!IsPostBack)
         {
-            // Determinare le sezioni di cui eseguire il rendering
+            // Determine the sections to render
             UserManager manager = new UserManager();
             if (HasPassword(manager))
             {
@@ -41,17 +41,17 @@ public partial class Account_Manage : System.Web.UI.Page
             }
             CanRemoveExternalLogins = manager.GetLogins(User.Identity.GetUserId()).Count() > 1;
 
-            // Messaggio di completamento del rendering
+            // Render success message
             var message = Request.QueryString["m"];
             if (message != null)
             {
-                // Rimuovere la stringa di query dall'azione
+                // Strip the query string from action
                 Form.Action = ResolveUrl("~/Account/Manage");
 
                 SuccessMessage =
-                    message == "ChangePwdSuccess" ? "Cambiamento password completato."
-                    : message == "SetPwdSuccess" ? "Impostazione password completata."
-                    : message == "RemoveLoginSuccess" ? "L'account è stato rimosso."
+                    message == "ChangePwdSuccess" ? "Your password has been changed."
+                    : message == "SetPwdSuccess" ? "Your password has been set."
+                    : message == "RemoveLoginSuccess" ? "The account was removed."
                     : String.Empty;
                 successMessage.Visible = !String.IsNullOrEmpty(SuccessMessage);
             }
@@ -81,7 +81,7 @@ public partial class Account_Manage : System.Web.UI.Page
     {
         if (IsValid)
         {
-            // Creare le informazioni di accesso locali e collegare l'account locale all'utente
+            // Create the local login info and link the local account to the user
             UserManager manager = new UserManager();
             IdentityResult result = manager.AddPassword(User.Identity.GetUserId(), password.Text);
             if (result.Succeeded)

@@ -17,18 +17,18 @@ public partial class SiteMaster : MasterPage
 
     protected void Page_Init(object sender, EventArgs e)
     {
-        // Il codice seguente facilita la protezione da attacchi XSRF
+        // The code below helps to protect against XSRF attacks
         var requestCookie = Request.Cookies[AntiXsrfTokenKey];
         Guid requestCookieGuidValue;
         if (requestCookie != null && Guid.TryParse(requestCookie.Value, out requestCookieGuidValue))
         {
-            // Utilizzare il token Anti-XSRF dal cookie
+            // Use the Anti-XSRF token from the cookie
             _antiXsrfTokenValue = requestCookie.Value;
             Page.ViewStateUserKey = _antiXsrfTokenValue;
         }
         else
         {
-            // Generare un nuovo token Anti-XSRF e salvarlo nel cookie
+            // Generate a new Anti-XSRF token and save to the cookie
             _antiXsrfTokenValue = Guid.NewGuid().ToString("N");
             Page.ViewStateUserKey = _antiXsrfTokenValue;
 
@@ -51,13 +51,13 @@ public partial class SiteMaster : MasterPage
     {
         if (!IsPostBack)
         {
-            // Impostare il token Anti-XSRF
+            // Set Anti-XSRF token
             ViewState[AntiXsrfTokenKey] = Page.ViewStateUserKey;
             ViewState[AntiXsrfUserNameKey] = Context.User.Identity.Name ?? String.Empty;
         }
         else
         {
-            // Convalidare il token Anti-XSRF
+            // Validate the Anti-XSRF token
             if ((string)ViewState[AntiXsrfTokenKey] != _antiXsrfTokenValue
                 || (string)ViewState[AntiXsrfUserNameKey] != (Context.User.Identity.Name ?? String.Empty))
             {

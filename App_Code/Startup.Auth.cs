@@ -8,12 +8,12 @@ namespace Web_Dev_Coursework
 {
     public partial class Startup {
 
-        // Per ulteriori informazioni sulla configurazione dell'autenticazione, visitare http://go.microsoft.com/fwlink/?LinkId=301883
+        // For more information on configuring authentication, please visit http://go.microsoft.com/fwlink/?LinkId=301883
         public void ConfigureAuth(IAppBuilder app)
         {
-            // Consentire all'applicazione di utilizzare un cookie per memorizzare informazioni relative all'utente connesso
-            // e memorizzare anche le informazioni relative a un utente che accede tramite un provider di terze parti.
-            // Obbligatorio se l'applicazione in uso consente l'accesso degli utenti
+            // Enable the application to use a cookie to store information for the signed in user
+            // and also store information about a user logging in with a third party login provider.
+            // This is required if your application allows users to login
             app.UseCookieAuthentication(new CookieAuthenticationOptions
             {
                 AuthenticationType = DefaultAuthenticationTypes.ApplicationCookie,
@@ -21,7 +21,7 @@ namespace Web_Dev_Coursework
             });
             app.UseExternalSignInCookie(DefaultAuthenticationTypes.ExternalCookie);
 
-            // Rimuovere il commento dalle seguenti righe per abilitare l'accesso con provider di accesso di terze parti
+            // Uncomment the following lines to enable logging in with third party login providers
             //app.UseMicrosoftAccountAuthentication(
             //    clientId: "",
             //    clientSecret: "");
