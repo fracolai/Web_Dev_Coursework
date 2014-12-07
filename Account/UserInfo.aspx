@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" Runat="Server">
     <br />
     <br />
-    <a runat="server" href="~/Account/UserMenu" title="Manage Account" style="font-size:x-large">Back to Account</a>
+    <a runat="server" href="~/Account/UserMenu" title="Manage Account" style="font-size:x-large;color:navy">Back to Account</a>
     <br />
     <br />
     <br />
@@ -117,7 +117,7 @@
                 <asp:linkbutton id="Edit"
                   text="Edit"
                   commandname="Edit"
-                  runat="server"/> 
+                  runat="server" style="color:navy"/> 
               </td>
             </tr>
         </table>
@@ -183,10 +183,10 @@
             <tr>
                 <td colspan="2">
                     <asp:LinkButton ID="UpdateButton" RunAt="server"
-                     Text="Update" CommandName="Update" />
+                     Text="Update" CommandName="Update" style="color:navy"/>
                      &nbsp;
                     <asp:LinkButton ID="CancelUpdateButton" RunAt="server"
-                    Text="Cancel" CommandName="Cancel" />
+                    Text="Cancel" CommandName="Cancel" style="color:navy"/>
                 </td>
             </tr>
         </table>
@@ -210,7 +210,7 @@
             </tr>
             <tr>
             <td>
-                <asp:linkbutton id="Edit" text="Edit" commandname="Edit" runat="server"/>
+                <asp:linkbutton id="Edit" text="Edit" commandname="Edit" runat="server" style="color:navy"/>
             </td>
             </tr>
         </table>
@@ -241,10 +241,10 @@
             <tr>
                 <td colspan="2">
                     <asp:LinkButton ID="UpdateButton2" RunAt="server"
-                    Text="Update" CommandName="Update" />
+                    Text="Update" CommandName="Update" style="color:navy"/>
                         &nbsp;
                     <asp:LinkButton ID="CancelUpdateButton2" RunAt="server"
-                    Text="Cancel" CommandName="Cancel" />
+                    Text="Cancel" CommandName="Cancel" style="color:navy"/>
                 </td>
             </tr>
             <tr>
@@ -275,7 +275,7 @@
             </tr>
             <tr>
             <td>
-                <asp:linkbutton id="Edit" text="Edit" commandname="Edit" runat="server"/>
+                <asp:linkbutton id="Edit" text="Edit" commandname="Edit" runat="server" style="color:navy"/>
             </td>
             </tr>
         </table>
@@ -306,10 +306,10 @@
             <tr>
                 <td colspan="2">
                     <asp:LinkButton ID="UpdateButton3" RunAt="server"
-                    Text="Update" CommandName="Update" />
+                    Text="Update" CommandName="Update" style="color:navy"/>
                         &nbsp;
                     <asp:LinkButton ID="CancelUpdateButton3" RunAt="server"
-                    Text="Cancel" CommandName="Cancel" />
+                    Text="Cancel" CommandName="Cancel" style="color:navy"/>
                 </td>
             </tr>
             <tr>
@@ -341,7 +341,7 @@
                 <asp:linkbutton id="Edit"
                   text="Edit"
                   commandname="Edit"
-                  runat="server"/> 
+                  runat="server" style="color:navy"/> 
               </td>
             </tr>
          </table>
@@ -359,10 +359,10 @@
             <tr>
                 <td colspan="2">
                     <asp:LinkButton ID="UpdateButton" RunAt="server"
-                     Text="Update" CommandName="Update" />
+                     Text="Update" CommandName="Update" style="color:navy"/>
                      &nbsp;
                     <asp:LinkButton ID="CancelUpdateButton" RunAt="server"
-                    Text="Cancel" CommandName="Cancel" />
+                    Text="Cancel" CommandName="Cancel" style="color:navy"/>
                 </td>
             </tr>
          </table>
