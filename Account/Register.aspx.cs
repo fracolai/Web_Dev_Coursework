@@ -15,7 +15,9 @@ public partial class Account_Register : Page
         {
             AddNewUsers users = new AddNewUsers(UserName.Text);
             IdentityHelper.SignIn(manager, user, isPersistent: false);
-            IdentityHelper.RedirectToReturnUrl(Request.QueryString["ReturnUrl"], Response);
+            //IdentityHelper.RedirectToReturnUrl(Request.QueryString["ReturnUrl"], Response);
+            //redirects to the search page instead of Home Page
+            Response.Redirect("/Search.aspx");
         }
         else
         {
